@@ -1,0 +1,373 @@
+<!--
+/*********************************************************************************
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
+
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
+ * Copyright (C) 2011 - 2014 Salesagility Ltd.
+ *
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License version 3 as published by the
+ * Free Software Foundation with the addition of the following permission added
+ * to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
+ * IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
+ * OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with
+ * this program; if not, see http://www.gnu.org/licenses or write to the Free
+ * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301 USA.
+ *
+ * You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
+ * SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
+ *
+ * The interactive user interfaces in modified source and object code versions
+ * of this program must display Appropriate Legal Notices, as required under
+ * Section 5 of the GNU Affero General Public License version 3.
+ *
+ * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
+ * these Appropriate Legal Notices must retain the display of the "Powered by
+ * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
+ * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
+ * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ ********************************************************************************/
+
+/*********************************************************************************
+
+ ********************************************************************************/
+-->
+
+<!-- BEGIN: Quote_Subject -->
+<p>Zamówienie SuiteCRM - {QUOTE_SUBJECT}</p>
+<!-- END: Quote_Subject -->
+<!-- BEGIN: Quote -->
+<p>{ASSIGNER} przypisał zamówienie do {ASSIGNED_USER}.</p>
+
+<p>Temat: {QUOTE_SUBJECT}<br />
+Status: {QUOTE_STATUS}<br /> 
+Szacowana data zakończenia: {QUOTE_CLOSEDATE}<br />
+Opis: {QUOTE_DESCRIPTION}</p>
+
+<p>Możesz przeglądać to zamówienie na:</p>
+<{URL}>
+<!-- END: Quote -->
+
+
+<!-- BEGIN: Account_Subject -->
+<p>Konto SuiteCRM - {ACCOUNT_NAME}</p>
+<!-- END: Account_Subject -->
+<!-- BEGIN: Account -->
+<p>{ASSIGNER} przypisał/a konto do {ASSIGNED_USER}.</p>
+
+<p>Nazwa: {ACCOUNT_NAME}<br />
+Typ: {ACCOUNT_TYPE}<br />
+Opis: {ACCOUNT_DESCRIPTION}</p>
+
+<p>Możesz przeglądać to konto na:</p>
+<{URL}>
+<!-- END: Account -->
+
+
+<!-- BEGIN: Case_Subject -->
+<p>Zgłoszenie SuiteCRM - {CASE_SUBJECT}</p>
+<!-- END: Case_Subject -->
+<!-- BEGIN: Case -->
+<p>{ASSIGNER} przypisał zgłoszenie do {ASSIGNED_USER}.</p>
+
+<p>Temat: {CASE_SUBJECT}<br />
+Priorytet: {CASE_PRIORITY}<br />
+Status: {CASE_STATUS}<br />
+Opis: {CASE_DESCRIPTION}</p>
+
+<p>Możesz przeglądać to zgłoszenie na:</p>
+<{URL}>
+<!-- END: Case -->
+
+
+<!-- BEGIN: Task_Subject -->
+<p>Zadanie SuiteCRM - {TASK_SUBJECT}</p>
+<!-- END: Task_Subject -->
+<!-- BEGIN: Task -->
+<p>{ASSIGNER} przypisał zadanie do {ASSIGNED_USER}.</p>
+
+<p>Temat: {TASK_SUBJECT}<br />
+Priorytet: {TASK_PRIORITY}<br /> 
+Termin: {TASK_DUEDATE}<br /> 
+Status: {TASK_STATUS}<br />
+Opis: {TASK_DESCRIPTION}</p>
+
+<p>Możesz przeglądać to zgłoszenie na:</p>
+<{URL}>
+<!-- END: Task -->
+
+
+<!-- BEGIN: Meeting_Subject -->
+<p>Spotkanie SuiteCRM - {MEETING_SUBJECT}</p>
+<!-- END: Meeting_Subject -->
+<!-- BEGIN: Meeting -->
+<p>Do: {MEETING_TO}</p>
+
+<p>{ASSIGNER} zaprosił cię na spotkanie</p>
+
+<p>Temat: {MEETING_SUBJECT}<br />
+Data rozpoczęcia: {MEETING_STARTDATE}<br />
+Data zakończenia: {MEETING_ENDDATE}</p>
+<p><!-- BEGIN: Meeting_External_API -->
+URL spotkania: {MEETING_URL}</p>
+<!-- END: Meeting_External_API -->
+<p>Opis: {MEETING_DESCRIPTION}</p>
+
+<p>Zaakceptuj to spotkanie:</p>
+<{ACCEPT_URL}&accept_status=accept>
+
+<p>Wstępnie zaakceptuj to spotkanie</p>
+<{ACCEPT_URL}&accept_status=tentative>
+
+<p>Odrzucić to spotkanie</p>
+<{ACCEPT_URL}&accept_status=decline>
+
+<!-- END: Meeting -->
+
+<!-- BEGIN: MeetingSpecial_Subject -->
+<p>Spotkanie SuiteCRM - {MEETING_SUBJECT}</p>
+<!-- END: MeetingSpecial_Subject -->
+<!-- BEGIN: MeetingSpecial -->
+<p>{ASSIGNER} przypisał spotkanie do {ASSIGNED_USER}.</p>
+
+<p>Temat: {MEETING_SUBJECT}<br />
+Status: {MEETING_STATUS}<br /> 
+Data rozpoczęcia: {MEETING_STARTDATE}<br />
+Data zakończenia: {MEETING_ENDDATE}<br />
+Opis: {MEETING_DESCRIPTION}</p>
+
+<p>Możesz przeglądać to spotkanie na:</p>
+<{URL}>
+<!-- END: MeetingSpecial -->
+
+
+<!-- BEGIN: Email_Subject -->
+<p>E-mail SuiteCRM - {EMAIL_SUBJECT}</p>
+<!-- END: Email_Subject -->
+<!-- BEGIN: Email -->
+<p>{ASSIGNER} przypisał e-mail {ASSIGNED_USER}.</p>
+
+<p>Temat: {EMAIL_SUBJECT}<br />
+Data wysłania: {EMAIL_DATESENT}</p>
+
+<p>Możesz przeglądać ten e-mail na:</p>
+<{URL}>
+<!-- END: Email -->
+
+
+
+
+
+
+<!-- BEGIN: Contact_Subject -->
+<p>Kontakt SuiteCRM- {CONTACT_NAME}</p>
+<!-- END: Contact_Subject -->
+<!-- BEGIN: Contact -->
+<p>{ASSIGNER} przypisał kontakt do {ASSIGNED_USER}.</p>
+
+<p>Nazwa: {CONTACT_NAME}<br />
+Opis: {CONTACT_DESCRIPTION}</p>
+
+<p>Możesz przeglądać ten kontakt na:</p>
+<{URL}>
+<!-- END: Contact -->
+
+
+<!-- BEGIN: Lead_Subject -->
+<p>Potencjalny klient SuiteCRM - {LEAD_NAME}</p>
+<!-- END: Lead_Subject -->
+<!-- BEGIN: Lead -->
+<p>{ASSIGNER} przypisał potencjalnego klienta do {ASSIGNED_USER}.</p>
+
+<p>Nazwa: {LEAD_NAME}<br />
+Źródło potencjalnego klienta: {LEAD_SOURCE}<br />
+Status: {LEAD_STATUS}<br />
+Opis: {LEAD_DESCRIPTION}</p>
+
+<p>Możesz przeglądać tego potencjalnego klienta na:</p>
+<{URL}>
+<!-- END: Lead -->
+
+
+<!-- BEGIN: Opportunity_Subject -->
+<p>Szansa SuiteCRM - {OPPORTUNITY_NAME}</p>
+<!-- END: Opportunity_Subject -->
+<!-- BEGIN: Opportunity -->
+<p>{ASSIGNER} przypisał szansę do {ASSIGNED_USER}.</p>
+
+<p>Nazwa: {OPPORTUNITY_NAME} <br /> 
+Kwota: {OPPORTUNITY_AMOUNT} <br />
+Szacowana data zakończenia: {OPPORTUNITY_CLOSEDATE} <br />
+Etap sprzedaży: {OPPORTUNITY_STAGE} <br />
+Opis: {OPPORTUNITY_DESCRIPTION}</p>
+
+<p>Możesz przeglądać tę Szansę na:</p>
+<{URL}>
+<!-- END: Opportunity -->
+
+
+<!-- BEGIN: Bug_Subject -->
+<p>Błąd SuiteCRM - {BUG_SUBJECT}</p>
+<!-- END: Bug_Subject -->
+<!-- BEGIN: Bug -->
+<p>{ASSIGNER} przypisał błąd do {ASSIGNED_USER}.</p>
+
+<p>Błąd numer: {BUG_BUG_NUMBER} <br />
+Temat: {BUG_SUBJECT} <br />
+Typ: {BUG_TYPE} <br />
+Priorytet: {BUG_PRIORITY} <br />
+Status: {BUG_STATUS} <br />
+Rozwiązanie: {BUG_RESOLUTION} <br />
+Opublikowane: {BUG_RELEASE} <br />
+Opis: {BUG_DESCRIPTION} <br />
+Dziennik: {BUG_WORK_LOG}</p>
+
+<p>Możesz przeglądać ten błąd na:</p>
+<{URL}>
+<!-- END: Bug -->
+
+
+<!-- BEGIN: Default_Subject -->
+<p>SuiteCRM - przypisane {OBJECT}</p>
+<!-- END: Default_Subject -->
+<!-- BEGIN: Default -->
+<p>{ASSIGNER} przypisał (a) {OBJECT} do {ASSIGNED_USER}.</p>
+
+<p>Możesz przeglądać {OBJECT} na:</p>
+<{URL}>
+<!-- END: Default -->
+
+<!-- BEGIN: Call_Subject -->
+<p>Rozmowa SuiteCRM - {CALL_SUBJECT}</p>
+<!-- END: Call_Subject -->
+<!-- BEGIN: Call -->
+<p>Rozmowa z: {CALL_TO}</p>
+<p>{ASSIGNER} zaprosił Cię do rozmowy</p>
+<p>Temat: {CALL_SUBJECT} <br />
+Status: {CALL_STATUS} <br />
+Data rozpoczęcia: {CALL_STARTDATE} <br />
+Czas połączenia: {CALL_HOURS}h, {CALL_MINUTES}m <br />
+Opis: {CALL_DESCRIPTION}</p>
+
+<p>Zaakceptuj tę rozmowę:</p>
+<{ACCEPT_URL}&accept_status=accept>
+
+<p>Wstępnie zaakceptuj tę rozmowę</p>
+<{ACCEPT_URL}&accept_status=tentative>
+
+<p>Odrzuć tę rozmowę</p>
+<{ACCEPT_URL}&accept_status=decline>
+
+<!-- END: Call -->
+
+<!-- BEGIN: CallSpecial_Subject -->
+<p>Rozmowa SuiteCRM - {CALL_SUBJECT}</p>
+<!-- END: CallSpecial_Subject -->
+<!-- BEGIN: CallSpecial -->
+<p>{ASSIGNER} przypisał rozmowę do {ASSIGNED_USER}.</p>
+
+<p>Temat: {CALL_SUBJECT} <br />
+Status: {CALL_STATUS} <br />
+Data rozpoczęcia: {CALL_STARTDATE} <br />
+Czas połączenia: {CALL_HOURS}h, {CALL_MINUTES}m <br />
+Opis: {CALL_DESCRIPTION}</p>
+
+<p>Możesz przeglądać tę rozmowę na:</p>
+<{URL}>
+<!-- END: CallSpecial -->
+
+<!-- BEGIN: Campaign_Subject -->
+<p>Kampania SuiteCRM - {CAMPAIGN_NAME}</p>
+<!-- END: Campaign_Subject -->
+<!-- BEGIN: Campaign -->
+<p>{ASSIGNER} przypisał kampanię do {ASSIGNED_USER}.</p>
+
+<p>Temat: {CAMPAIGN_NAME} <br />
+Kwota: {CAMPAIGN_AMOUNT} <br />
+Data zamknięcia: {CAMPAIGN_CLOSEDATE} <br />
+Status: {CAMPAIGN_STATUS} <br />
+Opis: {CAMPAIGN_DESCRIPTION}</p>
+
+<p>Możesz przeglądać tę kampanię na:</p>
+<{URL}>
+<!-- END: Campaign -->
+
+<!-- BEGIN: Quota_Subject -->
+<p>SuiteCRM Kwoty - Twoje przydziały z okresu {QUOTA_TIMEPERIOD}</p>
+<!-- END: Quota_Subject -->
+<!-- BEGIN: Quota -->
+<p>{ASSIGNER} przypisał kwotę do {ASSIGNED_USER}.</p>
+
+<p>Wartość: {QUOTA_AMOUNT} <br />
+Okres: {QUOTA_TIMEPERIOD}</p>
+
+<p>Możesz przeglądać przydzieloną kwotę na:</p>
+<{QUOTA_URL}>
+<!-- END: Quota -->
+
+<!-- BEGIN: KBDocument_Subject -->
+<p>Dokument SuiteCRM - {KBDOCUMENT_NAME}</p>
+<!-- END: KBDocument_Subject -->
+<!-- BEGIN: KBDocument -->
+
+{NOTIFICATION_MESSAGE}
+
+<p>Nazwa: {KBDOCUMENT_NAME} <br />
+Data utworzenia: {KBDOCUMENT_DATE_CREATED} <br />
+Autor: {KBDOCUMENT_CREATED_BY} <br />
+Status: {KBDOCUMENT_STATUS} <br />
+Opis: {KBDOCUMENT_DESCRIPTION}</p>
+
+<p>Możesz przeglądać ten dokument na:</p>
+<{URL}>
+<!-- END: KBDocument -->
+
+<!-- BEGIN: Contract_Subject -->
+<p>Kontrakt SuiteCRM- {CONTRACT_NAME}</p>
+<!-- END: Contract_Subject -->
+<!-- BEGIN: Contract-->
+
+<p>{ASSIGNER} przypisał kontrakt do {ASSIGNED_USER}.</p>
+
+<p>Możesz przeglądać ten kontrakt na:</p>
+<{URL}>
+<!-- END:Contract-->
+
+<!-- BEGIN: ContractSpecial_Subject -->
+<p>Kontrakt SuiteCRM- {CONTRACT_NAME}</p>
+<!-- END: ContractSpecial_Subject -->
+<!-- BEGIN: ContractSpecial -->
+
+<p>Twój kontrakt: {CONTRACT_NAME} będzie nieaktualny w dniu {CONTRACT_END_DATE}.</p>
+
+<p>Możesz przeglądać ten kontrakt na:</p>
+<{URL}>
+<!-- END:ContractSpecial-->
+
+<!-- BEGIN: MeetingReminder_Subject -->
+<p>Przypomnienie o spotkaniu - {MEETING_SUBJECT}</p>
+<!-- END: MeetingSpecial_Subject -->
+<!-- BEGIN: MeetingReminder -->
+<p>Tytuł: {MEETING_SUBJECT} <br />
+Kiedy: {MEETING_STARTDATE} <br />
+Miejsce: {MEETING_LOCATION} <br />
+Utworzone przez: {MEETING_CREATED_BY}</p>
+<!-- END: MeetingReminder -->
+
+<!-- BEGIN: CallReminder_Subject -->
+<p>Przypomnienie o rozmowie - {CALL_SUBJECT}</p>
+<!-- END: CallReminder_Subject -->
+<!-- BEGIN: CallReminder -->
+<p>Tytuł: {CALL_SUBJECT} <br />
+Kiedy: {CALL_STARTDATE} <br />
+Utworzona przez: {CALL_CREATED_BY}</p>
+<!-- END: CallReminder -->
